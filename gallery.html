@@ -7,6 +7,35 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <style>
+        /* Optional internal styling to make sure the certificate image fits elegantly */
+        .cert-card {
+            margin-top: 30px;
+            max-width: 450px;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+            background: #fff;
+            padding: 10px;
+            display: inline-block;
+        }
+        .cert-card:hover {
+            transform: translateY(-5px);
+        }
+        .cert-card img {
+            width: 100%;
+            height: auto;
+            border-radius: 6px;
+            display: block;
+        }
+        .cert-card p {
+            margin: 10px 0 5px 0;
+            font-size: 14px;
+            font-weight: bold;
+            text-align: center;
+        }
+    </style>
 </head>
 <body>
     <nav>
@@ -59,7 +88,13 @@
                     <li>💻 Coding Practice Screenshots</li>
                     <li>📈 Learning Progress Screenshots</li>
                 </ul>
-                <p style="margin-top: 20px; font-style: italic; color: #666;">(Images coming soon as the portfolio grows!)</p>
+
+                <div class="cert-card" data-aos="zoom-in" data-aos-delay="200">
+                    <a href="https://www.freecodecamp.org/certification/rahinatu/responsive-web-design" target="_blank">
+                        <img src="rahinatucert.jpg" alt="freeCodeCamp Responsive Web Design Certification">
+                    </a>
+                    <p>🎓 Responsive Web Design Certificate (Click to Verify)</p>
+                </div>
             </div>
         </div>
     </section>
