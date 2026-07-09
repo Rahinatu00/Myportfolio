@@ -41,6 +41,8 @@
                         href="services.html">Services</a></div>
                 <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="1100"><a
                         href="blogs.html">Blogs</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="1150"><a
+                        href="media.html">Media</a></div>
                 <div class="link contact-btn" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="1200"><a
                         href="contact.html">Contact Us</a></div>
             </div>
@@ -59,6 +61,7 @@
                 <a href="learning.html">Journey</a>
                 <a href="services.html">Services</a>
                 <a href="blogs.html">Blogs</a>
+                <a href="media.html">Media</a>
                 <a href="contact.html">Contact Us</a>
                 <i class="fa-solid fa-xmark cancel" onclick="cancel()"></i>
             </div>
@@ -98,19 +101,14 @@
         function hamburg() {
             const navbar = document.querySelector(".dropdown");
             navbar.style.transform = "translateY(0%)";
-
-            // Disable background scrolling
             document.body.classList.add("noscroll");
         }
 
         function cancel() {
             const navbar = document.querySelector(".dropdown");
             navbar.style.transform = "translateY(-100%)";
-
-            // Enable scrolling again
             document.body.classList.remove("noscroll");
         }
-
     </script>
 </body>
 
