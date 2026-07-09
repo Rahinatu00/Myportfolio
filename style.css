@@ -187,12 +187,24 @@ section {
 }
 
 /* Core media render handling elements */
-audio, video {
+/* Core media render handling elements */
+audio {
     width: 100%;
     border-radius: 8px;
     display: block;
     outline: none;
     background-color: #1a1a1a;
+}
+
+video {
+    width: 100%;
+    max-height: 400px; /* Restricts the video from becoming too long or tall */
+    object-fit: contain; /* Prevents the video from stretching or distorting */
+    border-radius: 8px;
+    display: block;
+    outline: none;
+    background-color: #1a1a1a;
+    margin: 0 auto; /* Centers the video player if it scales down */
 }
 
 /* Responsive iframe aspect ratio controller wrapper */
