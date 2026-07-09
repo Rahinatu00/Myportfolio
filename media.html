@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+    <title>Media - Rahinatu's Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <style>
+        /* Custom embedded styles for consistent media rendering */
+        #media-section {
+            padding: 100px 7%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            color: #fff;
+        }
+        .media-title {
+            font-size: 2.5rem;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+        .media-title span {
+            color: #f01e2c; /* Uses the default highlight styling color match */
+        }
+        .media-container {
+            width: 100%;
+            max-width: 800px;
+            display: flex;
+            flex-direction: column;
+            gap: 40px;
+            background: rgba(255, 255, 255, 0.05);
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+        }
+        .media-block {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            width: 100%;
+        }
+        .media-block h3 {
+            font-size: 1.3rem;
+            border-left: 4px solid #f01e2c;
+            padding-left: 10px;
+        }
+        audio, video {
+            width: 100%;
+            border-radius: 8px;
+            outline: none;
+        }
+        .iframe-wrapper {
+            position: relative;
+            width: 100%;
+            padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
+            height: 0;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+        .iframe-wrapper iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <div class="nav-container">
+            <div class="logo" data-aos="zoom-in" data-aos-duration="1000">
+                <a href="index.html"><span>Rahinatu</span></a>
+            </div>
+
+            <div class="links">
+                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100"><a href="index.html">Home</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200"><a href="about.html">About</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300"><a href="bio.html">Bio</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400"><a href="skills.html">Skills</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500"><a href="projects.html">Projects</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="600"><a href="education.html">Education</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="700"><a href="experience.html">Experience</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="800"><a href="gallery.html">Gallery</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="900"><a href="learning.html">Journey</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="1000"><a href="services.html">Services</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="1100"><a href="blogs.html">Blogs</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="1150"><a href="media.html" class="active">Media</a></div>
+                <div class="link contact-btn" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="1200"><a href="contact.html">Contact Us</a></div>
+            </div>
+            <i class="fa-solid fa-bars hamburg" onclick="hamburg()"></i>
+        </div>
+        <div class="dropdown">
+            <div class="links">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="bio.html">Bio</a>
+                <a href="skills.html">Skills</a>
+                <a href="projects.html">Projects</a>
+                <a href="education.html">Education</a>
+                <a href="experience.html">Experience</a>
+                <a href="gallery.html">Gallery</a>
+                <a href="learning.html">Journey</a>
+                <a href="services.html">Services</a>
+                <a href="blogs.html">Blogs</a>
+                <a href="media.html">Media</a>
+                <a href="contact.html">Contact Us</a>
+                <i class="fa-solid fa-xmark cancel" onclick="cancel()"></i>
+            </div>
+        </div>
+    </nav>
+
+    <section id="media-section">
+        <h2 class="media-title" data-aos="fade-down" data-aos-duration="1000">My <span>Gallery Hub</span></h2>
+        
+        <div class="media-container" data-aos="fade-up" data-aos-duration="1500">
+            <div class="media-block">
+                <h3>Audio Showcase</h3>
+                <audio controls>
+                    <source src="rahinatuaudio.mp3" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio>
+            </div>
+
+            <div class="media-block">
+                <h3>Video Presentation</h3>
+                <video controls>
+                    <source src="Rahinatuvid.mp4" type="video/mp4">
+                    Your browser does not support the video element.
+                </video>
+            </div>
+
+            <div class="media-block">
+                <h3>Featured Insight</h3>
+                <div class="iframe-wrapper">
+                    <iframe src="https://www.youtube.com/embed/8aC7cBoHxDE" 
+                            title="I Wasted YEARS Learning to Code Before I Learned This." 
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                            allowfullscreen>
+                    </iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({ offset: 0 });
+    </script>
+    <script>
+        function hamburg() {
+            const navbar = document.querySelector(".dropdown");
+            navbar.style.transform = "translateY(0%)";
+            document.body.classList.add("noscroll");
+        }
+
+        function cancel() {
+            const navbar = document.querySelector(".dropdown");
+            navbar.style.transform = "translateY(-100%)";
+            document.body.classList.remove("noscroll");
+        }
+    </script>
+</body>
+
+</html>
+
