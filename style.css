@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
 
+/* FIXED: Re-added the missing selector that was crashing the stylesheet */
+.nav-container .links a::before {
     width: 0%;
     height: 3px;
     background-color: rgb(109,67, 0);
@@ -105,7 +107,25 @@ section{
 }
 
 /* ========================================================
-   ADDED MEDIA PAGE ONLY STYLES (Keeps original design safe)
+   RESPONSIVE NAVBAR BREAKPOINT FIX
+   ======================================================== */
+@media (max-width: 1150px) {
+    /* Hide the desktop row layout links when screen gets tight */
+    .nav-container .links {
+        display: none !important;
+    }
+    
+    /* Make sure the hamburger menu icon displays cleanly */
+    .nav-container .hamburg {
+        display: block !important;
+        font-size: 1.8rem;
+        color: white;
+        cursor: pointer;
+    }
+}
+
+/* ========================================================
+   ISOLATED MEDIA PAGE STYLES
    ======================================================== */
 #media-section {
     padding: 120px 7% 60px 7%;
@@ -124,7 +144,7 @@ section{
 }
 
 .media-title span {
-    color: rgb(109, 67, 0); /* Perfectly color-matched to her theme */
+    color: rgb(109, 67, 0);
 }
 
 .media-container {
@@ -164,8 +184,8 @@ section{
 
 #media-section video {
     width: 100%;
-    max-height: 380px; /* Restricts the tall video height seamlessly */
-    object-fit: contain; /* Keeps format from stretching out */
+    max-height: 380px; 
+    object-fit: contain; 
     border-radius: 8px;
     display: block;
     outline: none;
@@ -175,7 +195,7 @@ section{
 .iframe-wrapper {
     position: relative;
     width: 100%;
-    padding-bottom: 56.25%; /* 16:9 widescreen scaling wrapper */
+    padding-bottom: 56.25%; 
     height: 0;
     border-radius: 8px;
     overflow: hidden;
@@ -190,3 +210,4 @@ section{
     height: 100%;
     border: 0;
 }
+
